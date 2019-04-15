@@ -7,7 +7,7 @@ body {
 
 #header {
   background-color: #675c47;
-  margin:           10px;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
@@ -15,25 +15,17 @@ body {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
   position: absolute;
-  top: 180px;
-  right: 180px;
-  width: 280px;
-  z-index: 2;
+  display:table-cell;
+  vertical-align: top;
 }
 
 #sidebar {
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  position: absolute;
-  top   : 128px;
-  left: 120px;
-  width:280px;
-  z-index: 1;
-
+  display:table-cell;
+  vertical-align: top;
 }
 
 #footer {
@@ -41,7 +33,7 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           0px 10px 10px 10px;
   font-size:        90%;
   clear:            right;
   }
@@ -69,10 +61,18 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-.allcontent{
-  width:            800px;
-  padding-top:      5px;
-  padding-bottom:   5px;
-  background-color: #675c47;
-  margin:0px auto;
+.tableContainer{
+ display: table;
+border-spacing: 10px;
+}
+#tableRow {
+  display: table-row;
+}
+
+#drink {
+
+background-color: #efe5d0;
+width:20%;
+padding: 15px;
+vertical-align: top;
 }
