@@ -12,20 +12,20 @@ body {
 }
 
 #main {
+  display:table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  position: absolute;
-  display:table-cell;
   vertical-align: top;
 }
 
 #sidebar {
+  display:table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  display:table-cell;
   vertical-align: top;
+
 }
 
 #footer {
@@ -35,7 +35,6 @@ body {
   padding:          15px;
   margin:           0px 10px 10px 10px;
   font-size:        90%;
-  clear:            right;
   }
 
 h1 {
@@ -61,18 +60,32 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-.tableContainer{
+div#tableContainer{
  display: table;
 border-spacing: 10px;
 }
-#tableRow {
+div#tableRow {
   display: table-row;
 }
 
 #drink {
-
+display: table-cell;
 background-color: #efe5d0;
 width:20%;
 padding: 15px;
 vertical-align: top;
+
+}
+.headerImageLeft{
+  float: left;
+  background-image:  url(images/header.gif);
+  width: 400px;
+  height: 100px;
+}
+.headerImageRight{
+  float: right;
+  background-image: url(images/header.gif);
+  width: 400px;
+  height: 100px;
+  background-position:  -400px,0px;
 }
